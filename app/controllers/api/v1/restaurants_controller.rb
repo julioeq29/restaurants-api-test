@@ -31,6 +31,7 @@ class Api::V1::RestaurantsController < Api::V1::BaseController
   def destroy
     @restaurant.destroy
     head :no_content
+    # render json: { message: "It worked!" }
   end
 
   private
